@@ -67,9 +67,15 @@ body{
     background-color: rgb(240, 240, 240);
     padding:20px;
 }
+.main-info p{
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+.main-info h2{
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
 .item-column{
     display: grid;
     grid-template-columns: 2fr 1fr;
-
-
 }
