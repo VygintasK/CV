@@ -3,11 +3,12 @@ body{
 }
 .cvWrapper{
     display: grid;
-    grid-template-columns: 11mm 70mm 1fr;
+    grid-template-columns: 10mm 65mm 1fr;
     max-width: 21cm;
     grid-template-rows: 297mm;
     margin-left: auto;
     margin-right: auto;
+    padding: 10px;
 }
 
 .border{
@@ -28,17 +29,20 @@ body{
 .personal-details-wrapper .text{
  padding-left: 10px;
 }
+
 .personal-details-wrapper .item{
     font-size: 14px;
     display: flex;
     flex-wrap: nowrap;
 }
 
-
 .language-item{
     display: flex;
-    justify-content:space-between;
-    
+    justify-content:space-between;   
+}
+.language-item p{
+    margin-top: 3px;
+    margin-bottom: 3px;
 }
 .dot-wrap{
     align-items:center;
@@ -53,6 +57,7 @@ body{
     border-radius: 50%;
     display: inline-block;
     margin:4px;
+    -webkit-print-color-adjust: exact;
 }
 .dot.rus:last-child{
     border-color: #703233;
