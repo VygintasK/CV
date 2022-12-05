@@ -1,0 +1,75 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.cvWrapper{
+    display: grid;
+    grid-template-columns: 11mm 70mm 1fr;
+    max-width: 21cm;
+    grid-template-rows: 297mm;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.border{
+    background-color: grey;
+    
+}
+.personal-info{
+    background-color: lightgray;
+    font-size: 16px;
+    font: weight 200px;;
+    padding: 20px;
+}
+.title{
+    border-color: grey;
+    border-bottom-style: solid;
+    padding: 3px;
+}
+.personal-details-wrapper .text{
+ padding-left: 10px;
+}
+.personal-details-wrapper .item{
+    font-size: 14px;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+
+.language-item{
+    display: flex;
+    justify-content:space-between;
+    
+}
+.dot-wrap{
+    align-items:center;
+    display: flex;
+}
+.dot {
+    border-color: #703233;
+    border-style: solid;
+    height: 8px;
+    width: 8px;
+    background-color: #703233;
+    border-radius: 50%;
+    display: inline-block;
+    margin:4px;
+}
+.dot.rus:last-child{
+    border-color: #703233;
+    border-style: solid;
+    background-color:unset;
+}
+
+
+
+
+.main-info{
+    background-color: rgb(240, 240, 240);
+    padding:20px;
+}
+.item-column{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+
+
+}
