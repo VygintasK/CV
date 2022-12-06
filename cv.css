@@ -1,3 +1,6 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
 body{
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -10,10 +13,11 @@ body{
     margin-right: auto;
     padding: 10px;
 }
-
 .border{
     background-color: grey;
 }
+
+
 .personal-info{
     background-color: lightgray;
     font-size: 16px;
@@ -28,13 +32,11 @@ body{
 .personal-details-wrapper .text{
  padding-left: 10px;
 }
-
 .personal-details-wrapper .item{
     font-size: 14px;
     display: flex;
     flex-wrap: nowrap;
 }
-
 .language-item{
     display: flex;
     justify-content:space-between;   
@@ -65,8 +67,6 @@ body{
 }
 
 
-
-
 .main-info{
     background-color: rgb(240, 240, 240);
     padding:20px;
@@ -85,11 +85,7 @@ body{
 }
 
 
-
 @media screen and (max-width: 768px) {
-    body{
-        background-color: pink;
-    }
     .cvWrapper{
         grid-template-columns: 1fr 6fr 13fr;
     }
@@ -97,7 +93,6 @@ body{
         grid-template-columns: 1fr;
     }
 }
-
 
 @media screen and (max-width: 425px) {
     .cvWrapper{
@@ -118,8 +113,5 @@ body{
     }
     .item-column{
         grid-template-columns: 1fr;
-    }
-    body{
-        background-color: chartreuse;
     }
 }
