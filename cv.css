@@ -90,12 +90,17 @@ body{
     body{
         background-color: pink;
     }
+    .cvWrapper{
+        grid-template-columns: 1fr 6fr 13fr;
+    }
+    .item-column{
+        grid-template-columns: 1fr;
+    }
 }
 
 
 @media screen and (max-width: 425px) {
     .cvWrapper{
-        display: grid;
         grid-template-columns: 1fr 10fr;
         grid-template-rows: 1fr 1fr;
         grid-template-areas: 
@@ -112,7 +117,6 @@ body{
         grid-area: right2;
     }
     .item-column{
-        display: grid;
         grid-template-columns: 1fr;
     }
     body{
