@@ -13,7 +13,6 @@ body{
 
 .border{
     background-color: grey;
-    
 }
 .personal-info{
     background-color: lightgray;
@@ -83,4 +82,40 @@ body{
 .item-column{
     display: grid;
     grid-template-columns: 2fr 1fr;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    body{
+        background-color: pink;
+    }
+}
+
+
+@media screen and (max-width: 425px) {
+    .cvWrapper{
+        display: grid;
+        grid-template-columns: 1fr 10fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+                        "left right1"
+                        "left right2";
+    }
+    .border{
+        grid-area: left;
+    }
+    .personal-info{
+        grid-area: right1;
+    }
+    .main-info{
+        grid-area: right2;
+    }
+    .item-column{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    body{
+        background-color: chartreuse;
+    }
 }
